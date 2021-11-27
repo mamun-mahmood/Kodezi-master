@@ -1,0 +1,95 @@
+@import '../../common/scss/global_variables';
+.section-container {
+  &.confrim-email-container {
+    background-color: rgb(252, 252, 252);
+  }
+}
+
+.confirm-email-wrapper {
+  padding: 80px 0 140px 0;
+  text-align: center;
+
+  position: relative;
+  .forget-password-bg-color-left {
+    position: absolute;
+    width: 256px;
+    height: 392px;
+    left: 0px;
+    bottom: 105px;
+    background: linear-gradient(89.96deg, #b1a7e4 18.53%, #8478ce 131.6%);
+    opacity: 0.7;
+    filter: blur(500px);
+    -webkit-filter: blur(500px);
+}
+  .forget-password-bg-color-right {
+    position: absolute;
+    width: 446px;
+    height: 595px;
+    right: 0px;
+    top: 40px;
+    /*GRADIANT3*/background: linear-gradient(180deg, #40fbd7 0%, #fce14d 100%);
+    opacity: 0.8;
+    filter: blur(450px);
+    -webkit-filter: blur(450px);
+}
+  .heading {
+    font-family: $font-GothamMedium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 58px;
+    line-height: 68px;
+    /* identical to box height, or 117% */
+    text-align: center;
+    text-transform: capitalize;
+    /* font color */
+    color: #2c2c2c;
+    position: relative;
+  }
+
+  .sub-heading {
+    width: 100%;
+    margin: 16px 0;
+    margin-bottom: 35px;
+    font-family: $font-GothemBook;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: normal;
+    /* identical to box height, or 162% */
+    text-align: center;
+    /* font color */
+    color: #2c2c2c;
+    position: relative;
+  }
+
+  .confrim-email-btns {
+    max-width: 492px;
+    margin: 0 auto;
+
+    a,
+    button {
+      display: block;
+      min-width: 492px;
+      min-height: 78px;
+      margin-bottom: 18px;
+      padding: 25px;
+      color: #fff;
+      border: 1px solid #b1a7e4;
+      border-radius: 16px;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 26px;
+      letter-spacing: 0px;
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.04);
+
+      &.dark-btn {
+        background: #b1a7e4;
+      }
+
+      &.transparent-btn {
+        color: #2c2c2c;
+      }
+    }
+  }
+}

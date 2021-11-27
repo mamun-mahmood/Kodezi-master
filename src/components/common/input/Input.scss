@@ -1,0 +1,14 @@
+.ant-select {
+  width: 100%;
+
+  .ant-select-selector {
+    min-height: 63px;
+  }
+  input.input-component {
+    border: 1px solid #dbdbdb !important;
+    box-sizing: border-box !important;
+    border-radius: 8px !important;
+    width: 100% !important;
+    height: 60px !important;
+  }
+}

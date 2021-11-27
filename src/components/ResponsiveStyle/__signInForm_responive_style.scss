@@ -1,0 +1,101 @@
+@import './_global_responive_var.scss';
+
+@media (max-width: $max-width-phone) and (min-width: $min-width-phone) {
+  .sign-in-wrapper {
+    .sign-in-wrapper-left-bg-layout-change {
+      width: 100%;
+    }
+    .sign-in-wrapper-right-bg-layout {
+      width: 50%;
+    }
+    .sign-in-wrapper-container {
+      flex-direction: column;
+      .left-side {
+        .sub-heading {
+          width: 100% !important;
+        }
+        .heading {
+          text-align: center;
+        }
+      }
+      .right-side {
+        .sub-heading {
+          text-align: center;
+        }
+        .heading {
+          text-align: center;
+        }
+        .google-login-btns {
+          justify-content: center;
+          flex-direction: column;
+          .buttonActive {
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+              margin-left: 10px;
+            }
+          }
+          .buttonActive:last-child {
+            margin-top: 10px;
+          }
+        }
+        form {
+          .custom-flex {
+            flex-direction: column;
+            margin-top: 14px;
+            .column {
+              .form__input_wrapper,
+              .form__input__user,
+              .form__input__emil {
+                width: 100% !important;
+              }
+            }
+            .column:last-child {
+              margin-top: 14px;
+            }
+          }
+        }
+      }
+    }
+    .field-wrapper {
+      margin-top: 14px;
+    }
+  }
+}
+@media (max-width: $max-width-ipad-pro) and (min-width: $min-width-ipad-pro) {
+  .sign-in-wrapper {
+    padding: 0 20px;
+  }
+  .heading {
+    text-align: center;
+  }
+  .right-side {
+    .sub-heading {
+      text-align: center;
+    }
+  }
+  .google-login-btns {
+    justify-content: center;
+    .buttonActive:last-child {
+      margin-left: 20px;
+    }
+  }
+
+  .column {
+    width: 100%;
+  }
+  .column:last-child {
+    margin-left: 20px;
+  }
+  .custom-flex {
+    .column {
+      .form__input_wrapper,
+      .form__input__user,
+      .form__input__emil {
+        width: 100% !important;
+      }
+    }
+  }
+}

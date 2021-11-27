@@ -1,0 +1,52 @@
+@import './_global_responive_var.scss';
+@media (max-width: $max-width-phone) and (min-width: $min-width-phone) {
+  .footer-wrapper {
+    padding: 0 10px;
+    .footer-container {
+      flex-direction: column;
+      .footer-logo {
+        width: 100%;
+      }
+      .footer-links-wrapper {
+        width: 100%;
+        flex-direction: column;
+      }
+      .newsLetter-wrapper {
+        width: 100%;
+      }
+    }
+  }
+}
+@media (max-width: $max-width-ipad) and (min-width: $min-width-ipad) {
+  .footer-wrapper {
+    padding: 0 10px;
+    .footer-container {
+      flex-direction: column;
+      .footer-logo {
+        width: 100%;
+        .social-icons {
+          justify-content: start;
+          a {
+            margin: 0 3% 0 0;
+          }
+        }
+      }
+      .footer-links-wrapper {
+        width: 100%;
+        flex-direction: row;
+        margin: 20px 0;
+      }
+      .newsLetter-wrapper {
+        width: 100%;
+      }
+    }
+  }
+}
+@media (max-width: $max-width-ipad-pro) and (min-width: $min-width-ipad-pro) {
+  .footer-wrapper {
+    .footer-container {
+      padding: 100px 20px !important;
+      // display: none;
+    }
+  }
+}

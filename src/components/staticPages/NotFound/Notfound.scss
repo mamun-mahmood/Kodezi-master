@@ -1,0 +1,103 @@
+@import '../../common/scss/global_variables';
+.section-container {
+  &.not-found-container {
+    background: #f9f8ff;
+  }
+}
+
+.not-found-wrapper {
+  padding: 140px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 713px;
+  margin: auto;
+  .img {
+    width: 568.41px;
+    height: 448px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  .not-found-heading {
+    font-family: $font-GothamMedium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 58px;
+    line-height: 68px;
+    /* identical to box height, or 117% */
+    text-align: center;
+    text-transform: capitalize;
+    /* font color */
+    color: #2c2c2c;
+    margin-bottom: 16px;
+    position: relative;
+    z-index: 999;
+  }
+  .not-found-wrapper-bg-shadow-color {
+    position: absolute;
+    width: 396px;
+    height: 525px;
+    right: 24px;
+    top: 183px;
+    background: linear-gradient(180deg, #bdb2f4 0%, #660cf9 100%);
+    opacity: 0.8;
+    filter: blur(350px);
+  }
+  .not-found-wrapper-bg-shadow-color-one {
+    position: absolute;
+    width: 250px;
+    height: 358px;
+    left: -26px;
+    top: 500px;
+    background: linear-gradient(180deg, #765cfb 0.01%, #3a1dcc 100%);
+    opacity: 0.4;
+    filter: blur(250px);
+  }
+  .sub-heading {
+    font-family: $font-GothemBook;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+    text-align: center;
+    /* font color */
+    color: #2c2c2c;
+    width: 556px;
+    margin-bottom: 46px;
+    position: relative;
+    z-index: 999;
+  }
+
+  .not-found-btns {
+    a {
+      display: inline-block;
+      min-width: 163px;
+      min-height: 48px;
+      margin: 0 10px;
+      padding: 11px;
+      // background: linear-gradient(180deg, #b1a7e4 0%, #8478ce 100%);
+
+      background: linear-gradient(89.96deg, #998ae9 18.53%, #8478ce 131.6%);
+      /* button */
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.04);
+      border-radius: 28px;
+
+      font-family: Montserrat !important;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      /* identical to box height, or 162% */
+      text-align: center;
+      text-transform: capitalize;
+      /* main white */
+      color: #ffffff;
+    }
+  }
+}

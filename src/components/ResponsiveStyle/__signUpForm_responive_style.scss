@@ -1,0 +1,41 @@
+@import './_global_responive_var.scss';
+
+@media (max-width: $max-width-phone) and (min-width: $min-width-phone) {
+  .sign-in-wrapper {
+    .sign-in-wrapper-left-bg-layout {
+      width: 100% !important;
+    }
+    .sign-in-wrapper-container {
+      padding: 0 ;
+      .sub-section {
+        max-width: 100%;
+        width: 100%;
+      }
+      .right-side {
+        padding: 0px;
+        .google-login-btns {
+          justify-content: center;
+          flex-direction: column;
+          margin: 0 auto;
+          width: fit-content;
+          .button {
+            height: auto !important;
+          }
+          .button:last-child {
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: $max-width-ipad) and (min-width: $min-width-ipad) {
+  .sign-in-wrapper {
+    .sign-in-wrapper-left-bg-layout {
+      width: 100% !important;
+    }
+    .sign-in-wrapper-container {
+      padding: 0 20px;
+    }
+  }
+}

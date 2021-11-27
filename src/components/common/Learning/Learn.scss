@@ -1,0 +1,127 @@
+@import '../../common/scss/global_variables.scss';
+
+.learing_wrapper {
+  //   .heading {
+  //     margin-left: 17px;
+  //   }
+  .bg_color_wrapper {
+    position: relative;
+    .bg_color {
+      &_one {
+        position: absolute;
+        width: 500px;
+        height: 558px;
+        left: -159px;
+        top: -22px;
+        background: #af35f4;
+        opacity: 0.5;
+        filter: blur(400px);
+      }
+      &_tow {
+        position: absolute;
+        width: 700px;
+        height: 700px;
+        right: 0px;
+        top: 135px;
+        background: linear-gradient(90deg, #e65c00 0%, #f9d423 100%);
+        filter: blur(450px);
+        -webkit-filter: blur(450px);
+      }
+      &_three {
+        position: absolute;
+        width: 658px;
+        height: 658px;
+        left: 0px;
+        top: 754px;
+        background: linear-gradient(180deg, #765cfb 0.01%, #3a1dcc 100%);
+        opacity: 0.3;
+        filter: blur(800px);
+      }
+      &_fore {
+        position: absolute;
+        width: 658px;
+        height: 658px;
+        left: 0px;
+        top: 1074px;
+        background: #3ca4fe;
+        filter: blur(1000px);
+      }
+      &_five {
+        position: absolute;
+        width: 658px;
+        height: 658px;
+        right: 0px;
+        top: 819px;
+        background: #3ca4fe;
+        filter: blur(1000px);
+      }
+      &_six {
+        position: absolute;
+        width: 658px;
+        height: 658px;
+        left: 0px;
+        top: 2385px;
+        background: linear-gradient(180deg, #765cfb 0.01%, #3a1dcc 100%);
+        opacity: 0.5;
+        filter: blur(800px);
+        -webkit-filter: blur(800px);
+      }
+      &_seven {
+        position: absolute;
+        width: 658px;
+        height: 412px;
+        left: -228px;
+        top: 2452px;
+        background: #3ca4fe;
+        filter: blur(500px);
+      }
+      &_eight {
+        position: absolute;
+        width: 700px;
+        height: 426px;
+        right: 0px;
+        top: 1822px;
+        background: linear-gradient(90deg, #e65c00 0%, #f9d423 100%);
+        filter: blur(400px);
+      }
+    }
+  }
+  .section_container {
+    .heading_wrapper {
+      text-align: center;
+      padding-top: 100px;
+      .l_heading {
+        color: #2c2c2c;
+        // margin: 40px 0 0 0;
+        font-family: $font-GothamMedium;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 58px;
+        margin-bottom: 32px;
+        text-transform: capitalize;
+        text-align: center !important;
+        position: relative;
+      }
+      .l_sub_heading {
+        font-family: $font-GothemBook;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        text-transform: capitalize;
+        position: relative;
+        padding: 0 10px;
+      }
+    }
+
+    .cards-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 48px;
+      justify-content: space-evenly;
+    }
+  }
+}

@@ -1,0 +1,228 @@
+@import './_global_responive_var.scss';
+
+@media (max-width: $max-width-phone) and (min-width: $min-width-phone) {
+  .feature-container {
+    padding: 140px 10px 0;
+    .bg-wrapper-overlay {
+      .bg-container-one {
+        width: 100%;
+      }
+      .bg-container-two {
+        width: 30%;
+        right: 0;
+      }
+      .bg-container-three {
+        width: 30%;
+        right: 0;
+      }
+    }
+    .feature-card-section {
+      .learning-card-wrapper {
+        .cards-wrapper {
+          .single-card {
+            &:first-child,
+            &:nth-child(3),
+            &:nth-child(5),
+            &:nth-child(7) {
+              margin-right: 0px !important;
+            }
+            .card-detail {
+              .card-icon {
+                width: 100px !important;
+                height: 77px !important;
+                margin-right: 18px !important;
+                img {
+                  width: 45px;
+                }
+              }
+              .card-content {
+                .card__title {
+                  margin: 10px 0;
+                }
+              }
+            }
+            .corner-img {
+              right: -7px;
+              bottom: -7px;
+            }
+          }
+        }
+      }
+    }
+    .feature-tiles {
+      .row-even {
+        .row-even-bg {
+          width: 30% !important;
+          position: absolute;
+        }
+        .main-container {
+          flex-direction: column !important;
+          .content-detail {
+            margin: 0;
+            .text-image-container {
+              width: 100% !important;
+              text-align: center;
+              .text-image-container__text,
+              .text-image-container__title {
+                text-align: center;
+                width: 100% !important;
+              }
+            }
+          }
+          .inner-sec {
+            width: 100% !important;
+            text-align: center;
+          }
+          .img-section {
+            width: 100% !important;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+      .row-odd {
+        .main-container {
+          flex-direction: column !important;
+          .content-detail {
+            margin: 0;
+            .text-image-container {
+              width: 100% !important;
+              text-align: center;
+              .text-image-container__text,
+              .text-image-container__title {
+                text-align: center;
+                width: 100% !important;
+              }
+            }
+          }
+          .inner-sec {
+            width: 100% !important;
+          }
+          .img-section {
+            width: 100% !important;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+      .row-even:last-child {
+        .main-container {
+          width: 100% !important;
+          .img-section {
+            width: 100% !important;
+            height: 410px !important;
+            img {
+              height: 100%;
+              width: 100%;
+              object-fit: contain;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: $max-width-ipad) and (min-width: $min-width-ipad) {
+  .feature-container {
+    .bg-wrapper-overlay {
+      .bg-container-two {
+        width: 30%;
+        right: 0 !important;
+      }
+      .bg-container-three {
+        width: 30%;
+        right: 0 !important;
+      }
+    }
+    .feature-card-section {
+      .learning-card-wrapper {
+        .cards-wrapper {
+          .single-card {
+            &:first-child,
+            &:nth-child(3),
+            &:nth-child(5),
+            &:nth-child(7) {
+              margin-right: 0px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: $max-width-ipad-pro) and (min-width: $min-width-ipad-pro) {
+  .feature-container {
+    padding: 140px 30px 0;
+    .bg-wrapper-overlay {
+      .bg-container-one {
+        width: 100%;
+      }
+      .bg-container-two {
+        width: 30%;
+        right: 0;
+      }
+      .bg-container-three {
+        width: 30%;
+        right: 0;
+      }
+    }
+    .feature-card-section {
+      .learning-card-wrapper {
+        .cards-wrapper {
+          .single-card {
+            width: 48% !important;
+            &:first-child,
+            &:nth-child(3),
+            &:nth-child(5),
+            &:nth-child(7) {
+              margin-right: 30px !important;
+            }
+            .card-detail {
+              .card-icon {
+                width: 100px !important;
+                height: 77px !important;
+                margin-right: 18px !important;
+                img {
+                  width: 45px;
+                }
+              }
+              .card-content {
+                .card__title {
+                  margin: 10px 0;
+                }
+              }
+            }
+            .corner-img {
+              right: -7px;
+              bottom: -7px;
+            }
+          }
+        }
+      }
+    }
+    .content-detail {
+      width: 576.4px;
+      .text-image-container__text {
+        width: fit-content !important;
+      }
+    }
+  }
+}
+@media (max-width: 1570px) and (min-width: $max-width-ipad-pro) {
+  .feature-container {
+    .bg-wrapper-overlay {
+      .bg-container-two {
+        width: 30%;
+        right: 0 !important;
+      }
+      .bg-container-three {
+        width: 30%;
+        right: 0 !important;
+      }
+    }
+  }
+}

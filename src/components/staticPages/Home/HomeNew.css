@@ -1,0 +1,45 @@
+.heading1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #2c2c2c;
+    text-align: center;
+}
+.sub_heading {
+    text-align: center;
+    text-transform: capitalize;
+    color: #2c2c2c;
+    font-size: 18px;
+    font-weight: normal;
+
+}
+.btn-link {
+    min-width: 150px;
+    /* height: 48px; */
+    background-color: #fff;
+    border-radius: 25px;
+    color: #2c2c2c;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    font-family: Montserrat;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.try-now-btn {
+    min-width: 150px;
+    /* height: 48px; */
+    background-color: #8c80da;
+    border-radius: 25px;
+    color: #2c2c2c;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    font-family: Montserrat;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

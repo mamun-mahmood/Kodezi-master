@@ -1,0 +1,331 @@
+@import './_global_responive_var.scss';
+
+@media (max-width: $max-width-phone) and (min-width: $min-width-phone) {
+  .home-wrapper {
+    .sub-section__two_bg {
+      width: 55% !important;
+    }
+    .sub-section__two_bg_2 {
+      width: 60% !important;
+    }
+    .sub-section__two_bg_3 {
+      width: 60% !important;
+    }
+    .sub-section__two_bg_4 {
+      width: 50% !important;
+      left: 0;
+    }
+    .sub-section__two_bg_5 {
+      width: 60% !important;
+      left: 0;
+    }
+    .sub-section__two_bg_6 {
+      width: 40% !important;
+    }
+    .sub-section__two_bg_7 {
+      width: 50% !important;
+      left: 0;
+    }
+    .sub-section__two_bg_8 {
+      width: 34% !important;
+    }
+    .sub-section__one {
+      padding: 60px 20px !important;
+      flex-direction: column;
+      width: 100% !important;
+      height: auto;
+      z-index: 999;
+      .left-side {
+        .heading {
+          width: 100%;
+          font-size: 27px;
+          line-height: 40px;
+          text-align: center;
+        }
+        .sub-heading {
+          width: 100% !important;
+          text-align: center;
+        }
+        a.btn-link.btn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: fit-content;
+          margin: 0 auto;
+        }
+      }
+      .right-side {
+        width: 100% !important;
+        margin: 50px 0 0 0 !important;
+        height: auto;
+        transform: translate(0px, 0px);
+        -webkit-transform: translate(0px, 0px);
+        -moz-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+        -o-transform: translate(0px, 0px);
+      }
+    }
+    .sub-section__two {
+      padding: 60px 20px !important;
+      z-index: 999;
+      .sub-section__two__contaianer {
+        .heading {
+          width: 100% !important;
+          font-size: 27px;
+          line-height: 40px;
+          text-align: center;
+          padding: 50px 50px 0;
+          margin: 0;
+        }
+        .sub-heading {
+          width: 100% !important;
+          text-align: center;
+          padding: 16px 0px 10px 0px;
+        }
+        .img img {
+          width: 100% !important;
+        }
+        .try-now-btn {
+          margin-top: 40px;
+        }
+      }
+    }
+    .sub-section__three {
+      z-index: 999;
+      padding: 60px 0;
+      .main {
+        padding: 60px 20px !important;
+        .main-container {
+          z-index: 999;
+          flex-direction: column;
+          .inner-sec {
+            height: fit-content !important;
+            width: 100% !important;
+            .text-image-container {
+              margin: 0 auto !important;
+              display: flex;
+              justify-content: center;
+              flex-direction: column;
+              align-items: center;
+              .text-image-container__title {
+                font-size: 27px;
+                text-align: center;
+              }
+              .text-image-container__text {
+                width: 100% !important;
+                text-align: center;
+              }
+            }
+          }
+          .img-section {
+            margin-top: 40px;
+          }
+        }
+      }
+      .row-odd {
+        .main-container {
+          flex-direction: column !important;
+          z-index: 999;
+        }
+      }
+      .row-even:first-child .row-even-bg {
+        width: 100%;
+      }
+      .row-even:last-child {
+        width: 100%;
+      }
+    }
+    .logo-learning-wrapper {
+      .logo-section {
+        .logo-section-bg {
+            padding: 60px 0;
+          .section_container {
+            .logo-section_container {
+              flex-direction: column !important;
+              .logo-tile:nth-child(1),
+              .logo-tile:nth-child(2),
+              .logo-tile:nth-child(3) {
+                background: transparent !important;
+              }
+            }
+          }
+        }
+      }
+      .learning-card-section {
+        padding: 60px 20px;
+        .learning-card-wrapper {
+          .heading {
+            margin: 0 0 32px 0;
+            font-size: 27px;
+            text-align: center;
+            font-weight: 600;
+          }
+          .sub-heading {
+            margin: 0 !important;
+            text-align: center;
+            width: 100%;
+          }
+        }
+      }
+    }
+    .sub-section__three {
+      .Frow-even,
+      .Mrow-even,
+      .Lrow-even {
+        padding: 100px 20px !important;
+        .main-container {
+          z-index: 999;
+          flex-direction: column;
+          .content-detail {
+            .text-image-container {
+              .text-image-container__sub-title {
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: $max-width-ipad) and (min-width: $min-width-ipad) {
+  .home-wrapper {
+    .sub-section__two_bg {
+      width: 55% !important;
+    }
+    .sub-section__two_bg_2 {
+      width: 60% !important;
+    }
+    .sub-section__two_bg_3 {
+      width: 60% !important;
+    }
+    .sub-section__two_bg_4 {
+      width: 50% !important;
+      left: 0;
+    }
+    .sub-section__two_bg_5 {
+      width: 60% !important;
+      left: 0;
+    }
+    .sub-section__two_bg_6 {
+      width: 40% !important;
+    }
+    .sub-section__two_bg_7 {
+      width: 50% !important;
+      left: 0;
+    }
+    .sub-section__two_bg_8 {
+      width: 34% !important;
+    }
+    .logo-learning-wrapper {
+      .learning-card-section {
+        .learning-card-wrapper {
+          .cards-wrapper {
+            justify-content: space-evenly;
+            .single-card {
+              margin: 0 0 48px 0 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: $max-width-ipad-pro) and (min-width: $min-width-ipad-pro) {
+  .home-wrapper {
+    .sub-section__two_bg {
+      width: 55% !important;
+    }
+    .sub-section__two_bg_2 {
+      width: 60% !important;
+    }
+    .sub-section__two_bg_3 {
+      width: 60% !important;
+    }
+    .sub-section__two_bg_4 {
+      width: 50% !important;
+      left: 0;
+    }
+    .sub-section__two_bg_5 {
+      width: 60% !important;
+      left: 0;
+    }
+    .sub-section__two_bg_6 {
+      width: 40% !important;
+    }
+    .sub-section__two_bg_7 {
+      width: 50% !important;
+      left: 0;
+    }
+    .sub-section__two_bg_8 {
+      width: 34% !important;
+    }
+    .sub-section__one {
+      display: flex;
+      justify-content: space-around;
+      padding: 0 40px;
+      height: 84vh;
+      .left-side {
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        .heading {
+          width: 100% !important;
+          font-size: 40px;
+          line-height: 40px;
+        }
+        .sub-heading {
+          width: 100% !important;
+          text-align: center;
+        }
+        .btn-link {
+          width: fit-content;
+        }
+      }
+      .right-side {
+        width: 45% !important;
+        margin: 0 !important;
+      }
+    }
+    .sub-section__two {
+      .sub-section__two__contaianer {
+        .sub-heading {
+          width: 70%;
+          margin: 0 auto;
+        }
+        .img img {
+          width: 100%;
+        }
+      }
+    }
+    .sub-section__three {
+      .main {
+        padding: 60px 40px 110px 40px !important;
+        .main-container {
+          z-index: 999;
+          
+        }
+      }
+      .row-odd {
+        .main-container {
+          .img-section {
+            margin-right: 40px !important;
+          }
+        }
+      }
+    }
+    .logo-learning-wrapper{
+      .learning-card-section{
+        .section_container{
+            .sub-heading{
+                width: 70%;
+                margin: 0 auto  !important;
+                text-align: center;
+            }
+        }
+      }  
+    }
+  }
+}
