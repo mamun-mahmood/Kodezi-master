@@ -1,5 +1,6 @@
 import React from 'react'
 import './HomeNew.css'
+// import './Home.css'
 import '../../ResponsiveStyle/__home_responive_style.scss'
 import Container from '../../common/MainContainer/Container'
 import { HomePageData } from '../../../utils/HomeData'
@@ -25,8 +26,16 @@ const Home = () => {
 
   return (
     <>
-      <div className="">
-        <div className="container " style={{ marginTop: '5%' }}>
+      <div className="home-wrapper">
+        <div className="sub-section__two_bg"></div>
+          <div className="sub-section__two_bg_2"></div>
+          <div className="sub-section__two_bg_3"></div>
+          <div className="sub-section__two_bg_4"></div>
+          <div className="sub-section__two_bg_5"></div>
+          <div className="sub-section__two_bg_6"></div>
+          <div className="sub-section__two_bg_7"></div>
+          <div className="sub-section__two_bg_8"></div>
+        <div className="container mb-5" style={{ marginTop: '5%' }}>
           <div className="row">
             <div className="col-md-6 mb-4 mb-md-0" style={{ textAlign: 'center', marginTop: '8%' }}>
           <p className="heading1" dangerouslySetInnerHTML={{ __html: mainHeading }}></p>
@@ -37,11 +46,11 @@ const Home = () => {
             </div>
             <div className="col-md-6">
 
-          <img className="w-100" src={dummyImgOne} />
+          <img className="w-100 sec1-img" src={dummyImgOne} />
             </div>
           </div>
         </div>
-        <div className="container mt-5 mb-4" style={{ textAlign: 'center' }}>
+        <div className="container mt-5 mb-5" style={{ textAlign: 'center' }}>
         <p
                 className="heading1"
                 dangerouslySetInnerHTML={{ __html: debugCodeHeading }}
@@ -56,7 +65,7 @@ const Home = () => {
               </Link>
         </div>
         <div className="home-wrapper">
-        <div className="container mt-5 mb-4">
+        <div className="container mt-5 mb-5">
           <div className="row">
             <div className="col-md-6" style={{ textAlign: 'center' }}>
           <p className="heading1" dangerouslySetInnerHTML={{ __html: tiles[0].title }}></p>
@@ -71,7 +80,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="container">
+        <div className="container mt-5 mb-5">
           <div className="row">
             <div className="col-md-6">
 
@@ -86,9 +95,9 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="container">
+        <div className="container mt-5 mb-5">
           <div className="row">
-            <div className="col-md-6" style={{ textAlign: 'center' }}>
+            <div className="col-md-6" style={{ textAlign: 'center', marginTop: '10%' }}>
           <p className="heading1" dangerouslySetInnerHTML={{ __html: tiles[2].title }}></p>
           <p className="sub_heading" dangerouslySetInnerHTML={{ __html: tiles[2].text }}></p>
           <Link to="/feature" className="try-now-btn btn mt-5 mb-5">
@@ -108,15 +117,15 @@ const Home = () => {
               <div className="logo-section-bg">
                 <div className="section_container">
                   <div className="logo-section_container">
-                          <div className="container mt-5">
+                          <div className="container ">
                             <div className="row">
                     {companyLogo &&
                       companyLogo.map((logos, i) => {
                         const { logo = {} } = logos
                         return (
-                          <div className="col-md-3 col-6 mb-1" key={i}>
+                          <div className="col-md-3 col-6 mt-md-5 mb-1" key={i}>
                             <Link to={logo.url}>
-                              <img src={logo.img} />
+                              <img className="w-75" src={logo.img} />
                             </Link>
                           </div>
                         )
@@ -127,7 +136,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="learning-card-section">
+            <div className="learning-card-section mt-5 mb-5">
               <div className="container">
               <p className="heading1">{cardsData.heading}</p>
               <p className="sub_heading">{cardsData.para}</p>

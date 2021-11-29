@@ -1,5 +1,5 @@
 import React from 'react'
-import './Feature.scss'
+import './Feature.css'
 import '../../ResponsiveStyle/__feature_responive_style.scss'
 import Container from '../../common/MainContainer/Container'
 import { FeatureData } from '../../../utils/FeatureData'
@@ -16,9 +16,9 @@ const Home = () => {
     <>
       <Container className="feature-container">
         <div className="feature-wrapper section_container">
-          <p className="heading">Our Features</p>
+          <p className="heading2">Our Features</p>
 
-          <p className="sub-heading">Programming</p>
+          <p className="subHeading">Programming</p>
           <div className="bg-wrapper-overlay">
             <div className="bg-container-one"></div>
             <div className="bg-container-two"></div>
@@ -29,7 +29,7 @@ const Home = () => {
             <LearningCards cardsData={cardsData} cornerImg={true} />
           </div>
 
-          <p className="sub-heading second">Written Content</p>
+          <p className="subHeading">Written Content</p>
           <div id="" className="feature-card-section">
             <WritettenCard FeatWritenData={FeatWritenData} cornerImg={true} />
           </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './OddEven.scss'
+import './OddEven.css'
 
 const OddEvenSections = (props) => {
   const { tiles, fristTiles, lastTiles, mastTiles } = props

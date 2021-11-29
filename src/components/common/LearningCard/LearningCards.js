@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import './LearningCards.scss'
-
 const LearningCards = ({ cardsData, cornerImg }) => {
   const [hover, sethover] = useState(1)
   const { push } = useHistory()
@@ -16,17 +15,16 @@ const LearningCards = ({ cardsData, cornerImg }) => {
   } = cardsData
 
   return (
-    <div className="learning-card-wrapper container">
-      {/* {heading && <p className="heading">{heading}</p>} */}
+    <div className="learning-card-wrapper">
+      {heading && <p className="heading">{heading}</p>}
       {/* {subHeading && <p className="learning-sub-heading">{subHeading}</p>} */}
-      {/* {para && <p className="sub-heading">{para}</p>} */}
+      {para && <p className="sub-heading">{para}</p>}
       {Lheading && <h1 className="l_heading">{Lheading}</h1>}
       {Lpera && <p className="l_sub_heading">{Lpera}</p>}
       {mospopulerheading && <p className="v_heading">{mospopulerheading}</p>}
-      <div className="cards-wrapper">
-        <div className="container">
-          <div className="row">
-          {cards &&
+      <div className="container">
+        <div className="row cards-wrapper">
+        {cards &&
           cards.length &&
           cards.map((card, index) => {
             const {
@@ -39,7 +37,7 @@ const LearningCards = ({ cardsData, cornerImg }) => {
             } = card
 
             return (
-              <div className="col-md-6 col-lg-3" key={index}>
+              <div key={index} className={ cornerImg === true ? 'col-md-6' : 'col-md-6 col-lg-3' }>
                 <div
                 onMouseOver={() => sethover(index)}
                 className={
@@ -71,9 +69,8 @@ const LearningCards = ({ cardsData, cornerImg }) => {
               </div>
             )
           })}
-          </div>
-        </div>
       </div>
+        </div>
     </div>
   )
 }

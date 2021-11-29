@@ -74,12 +74,12 @@ const PricingCards = ({ packages = [] }) => {
               <div className="card-detail">
                 {status && <p className="status">{status}</p>}
                 {price && (
-                  <p className="heading">
+                  <p className="heading-plan">
                     {price}
                     <span>{pricePerMonth}</span>
                   </p>
                 )}
-                {subHeading && <p className="sub-heading">{subHeading}</p>}
+                {subHeading && <p>{subHeading}</p>}
                 <div className="points">
                   {iconText &&
                     iconText.map((icontext, index) => {

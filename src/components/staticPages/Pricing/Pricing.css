@@ -24,17 +24,16 @@
   background: linear-gradient(90deg, #e65c00 0%, #f9d423 100%);
   filter: blur(1200px);
 }
-.pricing-wrapper .heading {
+.heading-plans {
   text-align: center;
   color: #2c2c2c;
-  font-family: 'GothamMedium';
   font-size: 58px;
   font-style: normal;
   font-weight: 500;
   line-height: 68px;
   text-transform: capitalize;
   position: relative;
-  z-index: 9;
+  
 }
 .pricing-wrapper .cards-wrapper {
   margin-top: 30px;
@@ -57,7 +56,6 @@
 .pricing-wrapper .cards-wrapper .single-card .status {
   margin: 0;
   color: #b1a7e4;
-  font-family: 'GothamMedium';
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -92,7 +90,6 @@
   margin: 0 !important;
   padding: 0 !important;
   width: 295px !important;
-  font-family: 'GothamBook';
 }
 .pricing-wrapper .cards-wrapper .single-card .card-icon {
   width: 28px;
@@ -127,7 +124,6 @@
   letter-spacing: 0px;
   text-align: left;
   color: #2c2c2c;
-  font-family: 'GothamBook';
 }
 .pricing-wrapper .cards-wrapper .single-card .custom-flex .card__title span {
   font-weight: bold;
@@ -135,10 +131,8 @@
 .pricing-wrapper .cards-wrapper .single-card .custom-flex .card__text {
   margin: 0;
   color: #999999;
-  font-family: 'GothamBook';
 }
 .pricing-wrapper .cards-wrapper .single-card .custom-flex .Pricing_card__text {
-  font-family: 'GothamBook';
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -163,8 +157,6 @@
   font-weight: 500;
   line-height: 15px;
   letter-spacing: 0px;
-  font-family: 'GothamMedium';
-  font-family: 'GothamMedium';
   border: none;
   width: 100%;
 }
