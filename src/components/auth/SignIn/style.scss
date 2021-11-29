@@ -16,35 +16,38 @@ button {
   justify-content: space-between;
   margin: 140px 0;
   position: relative;
-  .sign-in-wrapper-left-bg-layout {
-    position: absolute;
-    width: 558px;
-    height: 558px;
-    left: -51px;
-    top: -108px;
-    background: #af35f4;
-    filter: blur(1200px);
-    opacity: 0.5;
-  }
-  .sign-in-wrapper-left-bg-layout-change {
-    position: absolute;
-    width: 558px;
-    height: 558px;
-    left: -51px;
-    top: -29px;
-    background: #af35f4;
-    filter: blur(1200px);
-    opacity: 0.6;
-  }
-  .sign-in-wrapper-right-bg-layout {
-    position: absolute;
-    width: 456px;
-    height: 492px;
-    bottom: -119px;
-    right: 0;
-    background: linear-gradient(89.96deg, #b1a7e4 18.53%, #8478ce 131.6%);
-    opacity: 0.5;
-    filter: blur(800px);
+  
+  @supports not (-webkit-touch-callout: none) {
+    .sign-in-wrapper-right-bg-layout {
+      position: absolute;
+      width: 456px;
+      height: 492px;
+      bottom: -119px;
+      right: 0;
+      background: linear-gradient(89.96deg, #b1a7e4 18.53%, #8478ce 131.6%);
+      opacity: 0.5;
+      filter: blur(800px);
+    }
+    .sign-in-wrapper-left-bg-layout {
+      position: absolute;
+      width: 558px;
+      height: 558px;
+      left: -51px;
+      top: -108px;
+      background: #af35f4;
+      filter: blur(1200px);
+      opacity: 0.5;
+    }
+    .sign-in-wrapper-left-bg-layout-change {
+      position: absolute;
+      width: 558px;
+      height: 558px;
+      left: -51px;
+      top: -29px;
+      background: #af35f4;
+      filter: blur(1200px);
+      opacity: 0.6;
+    }
   }
   .sign-in-wrapper-container {
     display: flex;
@@ -92,7 +95,7 @@ button {
   .heading {
     color: #2c2c2c;
     margin: 22.24px 0 16px 0;
-    font-family: 'GothamMedium', sans-serif;
+    font-family: sans-serif;
     font-size: 48px;
     font-style: normal;
     font-weight: 500;
@@ -117,7 +120,7 @@ button {
 .heading {
   color: #2c2c2c;
   margin: 40px 0 0 0;
-  font-family: $font-GothamMedium, sans-serif;
+  font-family: sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 500;
@@ -129,7 +132,6 @@ button {
   // width: 93%;
   margin: 0 auto;
   color: #3e3b3b;
-  font-family: $font-GothemBook;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -148,7 +150,6 @@ button {
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.04);
   border-radius: 28px;
   border: 0;
-  font-family: $font-GothemBook;
   font-size: 16px;
   color: #fff;
   cursor: pointer;
@@ -168,7 +169,6 @@ button {
     border-radius: 10px;
     border: 0.5px solid #1976d2;
     padding: 15px 0;
-    font-family: $font-GothemBook;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -255,7 +255,6 @@ button {
     min-height: 50px;
     background: transparent;
     font-weight: 500;
-    // font-family: $font-GothemBook;
     color: #2c2c2c;
     padding: 20px 0;
     line-height: normal !important;
@@ -265,7 +264,6 @@ button {
     &:-ms-input-placeholder,
     &::-moz-placeholder,
     &::-webkit-input-placeholder {
-      // font-family: $font-GothemBook;
       font-style: normal;
       font-weight: normal;
       font-size: 16px;
@@ -275,7 +273,6 @@ button {
   }
   #email {
     &::placeholder {
-      // font-family: $font-GothemBook !important;
       font-style: normal !important;
       font-weight: normal !important;
       font-size: 16px !important;
@@ -293,7 +290,6 @@ button {
 // }
 // .form__input__pass
 .bg-remove-input {
-  background: transparent !important;
   width: 100% !important;
   height: 58px !important;
   justify-content: center;
@@ -316,7 +312,6 @@ button {
   // display: flex;
   align-items: center;
   justify-content: left;
-  // font-family: $font-GothemBook;
   input {
     width: 100%;
     border: none;
@@ -351,7 +346,6 @@ button {
   // display: flex;
   justify-content: center;
   align-items: center;
-  // font-family: $font-GothemBook;
   line-height: normal !important;
   img {
     width: 20px;
@@ -383,7 +377,6 @@ button {
 .label {
   margin-bottom: 16px;
   color: #2c2c2c;
-  font-family: $font-GothamMedium;
   font-size: 22px;
   font-style: normal;
   font-weight: 500;
@@ -401,7 +394,6 @@ button {
   .label {
     margin: 0;
     font-size: 16px;
-    font-family: $font-GothemBook;
     font-weight: 400;
   }
 
