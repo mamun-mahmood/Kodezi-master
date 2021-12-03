@@ -56,11 +56,11 @@ const Home = () => {
           <div className="sub-section__two section_container">
             <div className="sub-section__two__contaianer">
               <p
-                className="heading1"
+                className="heading"
                 dangerouslySetInnerHTML={{ __html: debugCodeHeading }}
               ></p>
               <p
-                className="sub_heading"
+                className="sub-heading"
                 dangerouslySetInnerHTML={{ __html: debugSubHeading }}
               ></p>
               <div className="img">

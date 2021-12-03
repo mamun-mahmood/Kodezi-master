@@ -5,6 +5,11 @@
 .feature-wrapper .bg-wrapper-overlay {
   position: relative;
 }
+@supports (-webkit-touch-callout: none) {
+  .feature-container {
+    background: radial-gradient(circle, rgba(192,182,222,1)23%, rgba(249,240,211,1) 87%);
+  }
+}
 @supports not (-webkit-touch-callout: none) {
   .feature-wrapper .bg-wrapper-overlay .bg-container-one {
     position: absolute;
