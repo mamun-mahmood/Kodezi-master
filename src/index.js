@@ -8,10 +8,12 @@ import 'antd/dist/antd.css'
 import { UserProvider } from '../src/contexts/userContext'
 
 ReactDOM.render(
-  <Provider store={store}>
-    <UserProvider>
-      <AppRouter />
-    </UserProvider>
-  </Provider>,
-  document.querySelector('#root')
+  <React.StrictMode>
+    <Provider store={store}>
+      <UserProvider>
+        <AppRouter />
+      </UserProvider>
+    </Provider>
+  </React.StrictMode>,
+  document.getElementById('root')
 )

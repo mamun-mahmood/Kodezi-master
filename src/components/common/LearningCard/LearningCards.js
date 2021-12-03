@@ -16,9 +16,9 @@ const LearningCards = ({ cardsData, cornerImg }) => {
 
   return (
     <div className="learning-card-wrapper">
-      {heading && <p className="heading">{heading}</p>}
+      {heading && <p className="heading2">{heading}</p>}
       {/* {subHeading && <p className="learning-sub-heading">{subHeading}</p>} */}
-      {para && <p className="sub-heading">{para}</p>}
+      {para && <p className="sub_heading2">{para}</p>}
       {Lheading && <h1 className="l_heading">{Lheading}</h1>}
       {Lpera && <p className="l_sub_heading">{Lpera}</p>}
       {mospopulerheading && <p className="v_heading">{mospopulerheading}</p>}

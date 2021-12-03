@@ -21,18 +21,18 @@ export const HomePageData = {
         altText: 'image'
       }
     },
-    {
-      title: 'Not just programming, writing too!',
-      text: 'We dont just offer programming solutions with our ai, use kodezi to make outlines for essays, fix grammar, or even automatically extend your paragraph lengths. all 100% aI driven plagiarism free!',
-      btnLabel: {
-        label: 'Acccess Now',
-        url: '/code-ai/feature'
-      },
-      image: {
-        url: '/images/gifs/Eassy_writter_  gif.gif',
-        altText: 'image'
-      }
-    },
+    // {
+    //   title: 'Not just programming, writing too!',
+    //   text: 'We dont just offer programming solutions with our ai, use kodezi to make outlines for essays, fix grammar, or even automatically extend your paragraph lengths. all 100% aI driven plagiarism free!',
+    //   btnLabel: {
+    //     label: 'Acccess Now',
+    //     url: '/code-ai/feature'
+    //   },
+    //   image: {
+    //     url: '/images/gifs/Eassy_writter_  gif.gif',
+    //     altText: 'image'
+    //   }
+    // },
     {
       title: 'Access open-source codes',
       text: 'Get access to over 200,000 open-source code to use in your tasks and projects. Browse from our library or upload your own code to gain credits to use torwards our other features!',
@@ -154,8 +154,8 @@ export const HomePageData = {
       }
     ]
   },
-
-  fristTilesbottom: [
+  // all bottom tiles data in this tilesBottom array object
+  tilesBottom: [
     {
       title: 'Peer to Peer Learning',
       subTitle:
@@ -167,9 +167,7 @@ export const HomePageData = {
       },
       icon: '/images/brain.svg',
       background: '#fff'
-    }
-  ],
-  tilesBottom: [
+    },
     {
       title: 'Get Rewarded For Learning',
       subTitle:
@@ -181,9 +179,7 @@ export const HomePageData = {
       },
       icon: '/images/phone.png',
       background: '#F9F8FF'
-    }
-  ],
-  lastTilesbottom: [
+    },
     {
       icon: '/images/girl-icon.svg',
       title: 'Make coding easy today!',
@@ -195,9 +191,9 @@ export const HomePageData = {
       image: {
         url: '/images/gifs/ani_8 gif.gif',
         altText: 'image'
-      }
-      // icon: '/images/girl-icon.svg',
-      // background: '#fff'
+      },
+      icon: '/images/girl-icon.svg',
+      background: '#fff'
     }
-  ]
+  ],
 }

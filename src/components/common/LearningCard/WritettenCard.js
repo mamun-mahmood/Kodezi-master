@@ -9,16 +9,15 @@ const WritettenCard = ({ FeatWritenData, cornerImg }) => {
       {heading && <p className="heading">{heading}</p>}
       {subHeading && <p className="learning-sub-heading">{subHeading}</p>}
       {para && <p className="sub-heading">{para}</p>}
-      <div className="container">
-        <div className="row cards-wrapper">
+      <div className="cards-wrapper">
         {cards &&
           cards.length &&
           cards.map((card, index) => {
             const { title = '', text = '', image = {} } = card
 
             return (
-              <div className="col-md-6" key={index}>
-                <div
+              <div
+                key={index}
                 onMouseOver={() => sethover(index)}
                 className={
                   hover === index ? 'single-card hoverActive' : 'single-card'
@@ -28,7 +27,6 @@ const WritettenCard = ({ FeatWritenData, cornerImg }) => {
                     'Launching Soon, Currently only available to specific users'
                   )
                 }
-                style={{ height: '80%' }}
               >
                 <div className="card-detail">
                   <div className="card-icon">
@@ -45,10 +43,8 @@ const WritettenCard = ({ FeatWritenData, cornerImg }) => {
                   </div>
                 )}
               </div>
-              </div>
             )
           })}
-        </div>
       </div>
     </div>
   )

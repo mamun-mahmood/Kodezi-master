@@ -1,8 +1,8 @@
-export const DEV_BASE_URL = 'http://localhost:3000'
-export const PROD_BASE_URL = 'https://kodezi-server.herokuapp.com'
+export const DEV_BASE_URL = 'https://api.kodezi.com'
+export const PROD_BASE_URL = 'https://api.kodezi.com'
 
 export const GOOGLE_CLIENT_ID =
-  '1030202032241-pal2n1bcru9tn7de970osi9ea17s9m4f.apps.googleusercontent.com'
+  '749750918194-j97bhkk52k32ovqrehkenia28c4i6353.apps.googleusercontent.com'
 
 export const TWITTER_SECRET_KEY = 'E0ZpygdpdbY5t41BMaIaoEewz'
 export const TWITTER_CONSUMER_KEY =

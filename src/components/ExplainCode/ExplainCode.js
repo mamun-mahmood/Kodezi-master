@@ -7,6 +7,7 @@ import ExplainCodeSubHeader from './ExplainCodeSubHeader'
 import ExplainCodeTabs from './explainCodeTabs'
 
 const ExplainCode = ({ match, history }) => {
+  const [activeTabKey, setActiveTabKey] = useState('1')
   const {
     params: { aiType }
   } = match
@@ -14,7 +15,6 @@ const ExplainCode = ({ match, history }) => {
     history.push('/404')
     return false
   }
-  const [activeTabKey, setActiveTabKey] = useState('1')
   const { subHeaderImg, subHeaderTitle, subHeaderSubTitle } =
     getSubHeaderData(aiType)
 

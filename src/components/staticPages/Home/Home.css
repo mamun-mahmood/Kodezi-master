@@ -29,21 +29,65 @@
   position: relative;
   z-index: 999;
 }
-.heading1 {
+@media (max-width: 650px) {
+  .home-wrapper .sub-section__one .left-side {
+    text-align: center;
+  }
+  .heading1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #2c2c2c;
+    text-align: center;
+  }
+  .sub_heading {
+    text-align: center;
+    text-transform: capitalize;
+    color: #2c2c2c;
+    font-size: 18px;
+    font-weight: normal;
+  }
+}
+.heading2 {
   font-size: 40px;
   font-weight: bold;
   text-transform: capitalize;
   color: #2c2c2c;
   text-align: center;
-  filter: drop-shadow(2px 4px 50px rgba(0, 0, 0, 0.1));
 }
-.sub_heading {
+.sub_heading2 {
   text-align: center;
   text-transform: capitalize;
   color: #2c2c2c;
   font-size: 18px;
   font-weight: normal;
-  filter: drop-shadow(2px 4px 50px rgba(0, 0, 0, 0.1));
+}
+@media (min-width: 650px) {
+  .heading1 {
+    font-size: 78px;
+    font-style: normal;
+    line-height: 84px;
+    font-family: "GothamMedium";
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #2c2c2c;
+    position: relative;
+    z-index: 999;
+    width: 643px;
+  }
+  .sub_heading {
+    margin-top: -60px;
+    text-align: left;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 26px;
+    text-transform: capitalize;
+    color: #2c2c2c;
+    position: relative;
+    z-index: 9999999;
+    width: 556px !important;
+  }
 }
 .sec1-img {
   filter: drop-shadow(2px 4px 50px rgba(0, 0, 0, 0.1));
@@ -74,7 +118,7 @@
   -ms-transform: translate(0px, 66px);
   -o-transform: translate(0px, 66px);
   /* margin-bottom: 143.3px;
-  */
+    */
   position: relative;
   z-index: 999;
   filter: drop-shadow(2px 4px 50px rgba(0, 0, 0, 0.1));
@@ -91,7 +135,14 @@
   padding-bottom: 50px;
 }
 @supports (-webkit-touch-callout: none) {
-  
+  .home-wrapper {
+    background: linear-gradient(
+      63deg,
+      rgba(225, 223, 237, 1) 28%,
+      rgba(192, 182, 222, 1) 81%,
+      rgba(225, 223, 237, 1) 97%
+    );
+  }
 }
 @supports not (-webkit-touch-callout: none) {
   .home-wrapper .sub-section__two_bg {

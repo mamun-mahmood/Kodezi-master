@@ -16,11 +16,11 @@ const PricingCards = ({ packages = [] }) => {
     pricePerMonth
   }) => {
     try {
-      if (!userContext.email) {
-        const { push } = useHistory()
-        push('/login')
-        return
-      }
+      // if (!userContext.email) {
+      //   const { push } = useHistory()
+      //   push('/login')
+      //   return
+      // }
       const stripePromise = loadStripe(STRIPE_PUB_KEY)
       const stripe = await stripePromise
       const {
@@ -74,12 +74,12 @@ const PricingCards = ({ packages = [] }) => {
               <div className="card-detail">
                 {status && <p className="status">{status}</p>}
                 {price && (
-                  <p className="heading-plan">
+                  <p className="heading">
                     {price}
                     <span>{pricePerMonth}</span>
                   </p>
                 )}
-                {subHeading && <p>{subHeading}</p>}
+                {subHeading && <p className="sub-heading">{subHeading}</p>}
                 <div className="points">
                   {iconText &&
                     iconText.map((icontext, index) => {

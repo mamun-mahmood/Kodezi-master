@@ -1,11 +1,11 @@
-import React from 'react'
-import './Home.css'
-import '../../ResponsiveStyle/__home_responive_style.scss'
-import Container from '../../common/MainContainer/Container'
-import { HomePageData } from '../../../utils/HomeData'
-import { Link } from 'react-router-dom'
-import OddEvenSections from '../../common/OddEvenImgSection/OddEvenImgSection'
-import LearningCards from '../../common/LearningCard/LearningCards'
+import React from "react";
+import "./Home.css";
+import "../../ResponsiveStyle/__home_responive_style.scss";
+import Container from "../../common/MainContainer/Container";
+import { HomePageData } from "../../../utils/HomeData";
+import { Link } from "react-router-dom";
+import OddEvenSections from "../../common/OddEvenImgSection/OddEvenImgSection";
+import LearningCards from "../../common/LearningCard/LearningCards";
 
 const Home = () => {
   const {
@@ -19,9 +19,7 @@ const Home = () => {
     companyLogo,
     cardsData,
     tilesBottom,
-    fristTilesbottom,
-    lastTilesbottom
-  } = HomePageData
+  } = HomePageData;
 
   return (
     <>
@@ -36,7 +34,7 @@ const Home = () => {
           <div className="sub-section__two_bg_7"></div>
           <div className="sub-section__two_bg_8"></div>
           <div className="sub-section__one section_container">
-            <div className="left-side" style={{ textAlign: 'center' }}>
+            <div className="left-side">
               <p
                 className="heading1"
                 dangerouslySetInnerHTML={{ __html: mainHeading }}
@@ -56,11 +54,11 @@ const Home = () => {
           <div className="sub-section__two section_container">
             <div className="sub-section__two__contaianer">
               <p
-                className="heading"
+                className="heading2"
                 dangerouslySetInnerHTML={{ __html: debugCodeHeading }}
               ></p>
               <p
-                className="sub-heading"
+                className="sub_heading2"
                 dangerouslySetInnerHTML={{ __html: debugSubHeading }}
               ></p>
               <div className="img">
@@ -83,14 +81,14 @@ const Home = () => {
                   <div className="logo-section_container">
                     {companyLogo &&
                       companyLogo.map((logos, i) => {
-                        const { logo = {} } = logos
+                        const { logo = {} } = logos;
                         return (
                           <div className="logo-tile" key={i}>
                             <Link to={logo.url}>
                               <img src={logo.img} />
                             </Link>
                           </div>
-                        )
+                        );
                       })}
                   </div>
                 </div>
@@ -106,16 +104,16 @@ const Home = () => {
 
           <div className="sub-section__three">
             <OddEvenSections
-              // tiles={tilesBottom}
-              mastTiles={tilesBottom}
-              lastTiles={lastTilesbottom}
-              fristTiles={fristTilesbottom}
+              tiles={tilesBottom}
+              // mastTiles={tilesBottom}
+              // lastTiles={lastTilesbottom}
+              // fristTiles={fristTilesbottom}
             />
           </div>
         </div>
       </Container>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

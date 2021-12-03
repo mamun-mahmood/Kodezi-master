@@ -53,11 +53,11 @@ function VerifyEmail() {
     }
   }
 
-  useEffect(() => {
-    if (token) {
-      verifyUserEmail(token)
-    }
-  }, [token])
+  // useEffect(() => {
+  //   if (token) {
+  //     verifyUserEmail(token)
+  //   }
+  // }, [token])
   return (
     <div>
       {token && isEmailVerified && (

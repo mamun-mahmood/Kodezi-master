@@ -88,7 +88,7 @@ export const SignInData = {
   signInHeading: 'Sign in to kodezi',
   subTitle: 'Let’s get you setup so we can make coding easy for you!',
   subDetail:
-    'Get access our AI coding debugging engine as well as access to written content AI engine to assist not only in programming but written content like essays! '
+    'Get access our AI coding debugging engine and excel your programming today!'
 }
 
 export const privacyPolicyData = {

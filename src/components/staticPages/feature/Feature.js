@@ -16,27 +16,27 @@ const Home = () => {
     <>
       <Container className="feature-container">
         <div className="feature-wrapper section_container">
-          <p className="heading2">Our Features</p>
+          <p className="heading">Our Features</p>
 
-          <p className="subHeading">Programming</p>
+          <p className="sub-heading">Programming</p>
           <div className="bg-wrapper-overlay">
             <div className="bg-container-one"></div>
             <div className="bg-container-two"></div>
-            <div className="bg-container-three"></div>
-            <div className="bg-container-fore"></div>
+            {/* <div className="bg-container-three"></div> */}
+            {/* <div className="bg-container-fore"></div> */}
           </div>
           <div className="feature-card-section">
             <LearningCards cardsData={cardsData} cornerImg={true} />
           </div>
 
-          <p className="subHeading">Written Content</p>
+          {/* <p className="sub-heading second">Written Content</p>
           <div id="" className="feature-card-section">
             <WritettenCard FeatWritenData={FeatWritenData} cornerImg={true} />
-          </div>
+          </div> */}
 
-          <div className="feature-tiles">
+          {/* <div className="feature-tiles">
             <OddEvenSections tiles={tiles} />
-          </div>
+          </div> */}
         </div>
       </Container>
     </>
