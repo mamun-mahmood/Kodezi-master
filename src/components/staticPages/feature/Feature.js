@@ -16,9 +16,9 @@ const Home = () => {
     <>
       <Container className="feature-container">
         <div className="feature-wrapper section_container">
-          <p className="heading">Our Features</p>
+          <p className="heading2">Our Features</p>
 
-          <p className="sub-heading">Programming</p>
+          <p className="subHeading">Programming</p>
           <div className="bg-wrapper-overlay">
             <div className="bg-container-one"></div>
             <div className="bg-container-two"></div>

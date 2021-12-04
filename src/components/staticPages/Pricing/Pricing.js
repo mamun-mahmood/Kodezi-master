@@ -11,8 +11,8 @@ const Pricing = () => {
     <>
       <Container className="pricing-container">
         <div className="pricing-wrapper">
-          <p className="heading">Our plans</p>
-          <div className="pricing-bg-color"></div>
+          <p className="heading-plans">Our plans</p>
+          <div className="pricing-bg-color "></div>
           <div className="pricing-bg-color-right"></div>
           <div className="pricing-card-section section_container">
             <PricingCards packages={cards} />
