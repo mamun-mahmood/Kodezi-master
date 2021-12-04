@@ -221,7 +221,7 @@
     background: #f0effc;
     filter: blur(70px);
   }
-  .logo-learning-wrapper .l-l-bg-r {
+  /* .logo-learning-wrapper .l-l-bg-r {
     position: absolute;
     height: 201px;
     width: 450px;
@@ -230,7 +230,7 @@
     background: linear-gradient(90deg, #00f5a0 0%, #00d9f5 100%);
     opacity: 0.4;
     filter: blur(400px);
-  }
+  } */
   .logo-learning-wrapper .logo-section {
     background: linear-gradient(89.96deg, #fff 37.53%, #f8f8ff 65.6%);
     overflow: hidden;

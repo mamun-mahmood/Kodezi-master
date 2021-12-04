@@ -105,9 +105,6 @@ const Home = () => {
           <div className="sub-section__three">
             <OddEvenSections
               tiles={tilesBottom}
-              // mastTiles={tilesBottom}
-              // lastTiles={lastTilesbottom}
-              // fristTiles={fristTilesbottom}
             />
           </div>
         </div>

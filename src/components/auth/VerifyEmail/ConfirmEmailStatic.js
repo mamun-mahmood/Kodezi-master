@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Container from '../../common/MainContainer/Container'
-
+import './ConfirmEmail.css'
 const ConfirmEmailStatic = ({
   confirmEmailImg,
   heading,
@@ -25,6 +25,7 @@ const ConfirmEmailStatic = ({
         <div className="forget-password-bg-color-right"></div>
         <div className="img">
           <img
+          className="confirm-email-img"
             src={`${
               !confirmEmailImg
                 ? '/images/confirm-email.png'
@@ -40,14 +41,14 @@ const ConfirmEmailStatic = ({
             dangerouslySetInnerHTML={{ __html: subHeading }}
           ></p>
         )}
-        <div className="confrim-email-btns">
+        <div className="confrim-email-btns btn-width">
           {gmailBtn && (
             <a href={gmailBtnLink} className="dark-btn">
               {gmailBtnLabel}
             </a>
           )}
           {outLookBtn && (
-            <a href={outLookBtnLink} className="transparent-btn">
+            <a href={outLookBtnLink} className="transparent-btn btn-width">
               {outLookBtnLabel}
             </a>
           )}

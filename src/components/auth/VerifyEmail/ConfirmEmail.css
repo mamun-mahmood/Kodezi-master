@@ -1,0 +1,25 @@
+@supports not (-webkit-touch-callout: none) {
+    .confirm-email-wrapper .forget-password-bg-color-left {
+      position: absolute;
+      width: 256px;
+      height: 392px;
+      left: 0px;
+      bottom: 105px;
+      background: linear-gradient(89.96deg, #b1a7e4 18.53%, #8478ce 131.6%);
+      opacity: 0.7;
+      filter: blur(500px);
+      -webkit-filter: blur(500px);
+    }
+    .confirm-email-wrapper .forget-password-bg-color-right {
+      position: absolute;
+      width: 446px;
+      height: 595px;
+      right: 0px;
+      top: 40px;
+      /*GRADIANT3*/
+      background: linear-gradient(180deg, #40fbd7 0%, #fce14d 100%);
+      opacity: 0.8;
+      filter: blur(450px);
+      -webkit-filter: blur(450px);
+    }
+  }

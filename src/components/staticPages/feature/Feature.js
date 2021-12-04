@@ -29,12 +29,12 @@ const Home = () => {
             <LearningCards cardsData={cardsData} cornerImg={true} />
           </div>
 
-          {/* <p className="sub-heading second">Written Content</p>
+          {/* <p className="heading2">Written Content</p>
           <div id="" className="feature-card-section">
             <WritettenCard FeatWritenData={FeatWritenData} cornerImg={true} />
-          </div> */}
+          </div>
 
-          {/* <div className="feature-tiles">
+          <div className="feature-tiles">
             <OddEvenSections tiles={tiles} />
           </div> */}
         </div>

@@ -16,8 +16,8 @@ const WritettenCard = ({ FeatWritenData, cornerImg }) => {
             const { title = '', text = '', image = {} } = card
 
             return (
+              <div key={index} className={ cornerImg === true ? 'col-md-6' : 'col-md-6 col-lg-3' }>
               <div
-                key={index}
                 onMouseOver={() => sethover(index)}
                 className={
                   hover === index ? 'single-card hoverActive' : 'single-card'
@@ -42,6 +42,7 @@ const WritettenCard = ({ FeatWritenData, cornerImg }) => {
                     <img src="/images/cardOverLay.svg" />
                   </div>
                 )}
+              </div>
               </div>
             )
           })}

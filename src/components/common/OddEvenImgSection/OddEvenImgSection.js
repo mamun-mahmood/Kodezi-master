@@ -17,12 +17,11 @@ const OddEvenSections = (props) => {
             image,
             background,
           } = tile;
-          // const odd = index % 2;
 
           return (
             <div
-              // key={`text-image-row-${index}`}
-              className={`main ${ index % 2 === 0 ? "row-odd" : "row-even"}`}
+              key={`text-image-row-${index}`}
+              className={`main ${ index % 2 === 0 ? "Frow-odd" : "Frow-even"}`}
               style={{ backgroundColor: background }}
             >
               <div className="row-even-bg"></div>
@@ -53,10 +52,7 @@ const OddEvenSections = (props) => {
                     )}
                   </div>
                 </div>
-                <div
-                  className="img-section inner-sec"
-                  style={{ marginRight: "15px !important" }}
-                >
+                <div className="img-section inner-sec">
                   <img
                     src={image.url}
                     // className={odd ? "odd-image-wrap" : ""}
