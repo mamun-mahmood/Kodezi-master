@@ -21,7 +21,7 @@ const OddEvenSections = (props) => {
           return (
             <div
               key={`text-image-row-${index}`}
-              className={`main ${ index % 2 === 0 ? "Frow-odd" : "Frow-even"}`}
+              className={`main ${ index % 2 !== 0 ? "Frow-odd" : "Frow-even"}`}
               style={{ backgroundColor: background }}
             >
               <div className="row-even-bg"></div>
