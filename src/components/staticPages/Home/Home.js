@@ -84,9 +84,9 @@ const Home = () => {
                         const { logo = {} } = logos;
                         return (
                           <div className="logo-tile" key={i}>
-                            {/* <Link to={logo.url}>
+                            <Link to={logo.url}>
                               <img src={logo.img} />
-                            </Link> */}
+                            </Link>
                           </div>
                         );
                       })}
